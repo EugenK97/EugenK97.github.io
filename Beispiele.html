@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <title>Das Leben von Evgenij Kozlov</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body id="background">
+
+    <header>
+        <h1 class="h1beispiel">Beispiele</h1> 
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="ueberMich.html">Über mich</a></li>
+                <li><a class="active" href="Beispiele.html">Beispiele</a></li>
+                <li><a href="Kontakt.html">Kontaktiere mich</a></li>
+            </ul>
+        </nav>
+            
+
+     </header>           
+
+
+     <main>
+        
+            <script>
+        
+                let timerStarted = false;
+        
+                function startTimer () {
+                    if (!timerStarted) {
+                    let startTime = new Date().getTime();
+                    let fiveMinutes = 1000 * 60 * 5;
+                    let endTime = startTime + fiveMinutes;
+        
+                
+                    setInterval(function() {
+                        let timeLeft = endTime - new Date().getTime();
+        
+                    if  (timeLeft > 0) {
+                        let minutes = timeLeft / (1000 * 60);
+                        minutes = Math.floor(minutes);
+                        let seconds = (timeLeft / 1000) % 60;
+                        seconds = Math.round(seconds);
+                        let text = "0" + minutes + " : " + seconds;
+                        timer.innerHTML = text;
+                            } 
+                    else {
+                        timer.innerHTML = "00 : 00";
+                    }
+        
+                    }, 1000);
+                } timerStarted = true;
+                }
+            </script>
+        
+        
+        <body class="background">             
+            
+            <div class="center margin-top"><img class="img2" src="egg.png"></div>
+        
+            <div class="center margin-top timer" id="timer">05 : 00</div>
+        
+            <div class="center margin-top"><img class="img3" onclick="startTimer()" src="button.png"></div>
+
+            
+
+        </main>
+
+    
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,303 @@
+.h1index{
+    text-align: center;
+}
+
+.h1about{
+    text-align: center;
+}
+
+.h1beispiel{
+    text-align: center;
+}
+
+.h1contact{
+    text-align:center;
+}
+
+h3{
+    text-align: center;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+/* Navigation */
+
+nav{
+    width: 100%;
+}
+
+nav::before{
+    content: '';
+    display:block;
+    background-color:skyblue;
+    width:100%;
+    height:20px;
+    box-shadow: 0 5px 5px gray;
+}
+
+nav ul{
+
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 40px;
+
+}
+
+nav li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul li .active{
+    color:skyblue;
+}
+
+/* Navigation Ende */
+
+main{
+    margin-top:25px;
+  
+}
+
+#background {
+    background-color:white;
+}
+
+/* foto */
+
+.contactImg{
+margin-right:10px;
+margin-left: 5px;
+margin-top: 10px;
+}
+
+/* contact dates */
+.address{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.tel{
+    padding-top:5px;
+    
+}
+
+.h2contact{
+    margin-top: 70px;
+}
+
+.socialmedia{
+
+    margin-top: 90px;
+    padding: 20px;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.socialmedia a{
+    margin:7px;
+}
+
+/* Kontakt Ende */
+/* Google Maps */
+
+#location{
+
+float: right;
+margin-right: 5px;
+margin-top: 10px;
+
+}
+
+/* Google Maps Ende */
+/* slideshow */
+
+.slideshow{
+    
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 0px 0px 10px grey;
+    margin: auto;
+    position: relative;
+
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow:hidden;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.slide-bild{
+    height: 100%;
+}
+
+.slide-textbereich{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 90%;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0, 30%, 0, 30%;
+    
+}
+
+.slide-ueberschrift{
+font-size: 1.5em;
+margin: 7px 0;
+color: white;
+}
+
+.pfeil {
+    position:absolute;
+    top: 0;
+    bottom: 0;   
+    font-weight: bold;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: rgba(255, 255, 255, 0.6);
+    user-select: none;
+    cursor: pointer;
+}
+
+.pfeil:hover{
+    color: skyblue;
+}
+
+.pfeil-rechts{
+    right: 0;
+}
+
+.pfeil-links{
+    left: 0;
+}
+
+.indikatorenliste{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    font-size: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.indikator{
+    padding: 0 3px;
+    user-select: none;
+    cursor:pointer;
+    opacity: 0.5;
+    transition: opacity 2s;
+}
+
+.aktiv{
+    opacity: 1;
+}
+
+/* Slideshow Ende */
+
+/* Über mich Start*/
+
+.journeySection{
+    float:left;
+    margin-top: 20px;
+}
+
+.journey{
+    margin-left: 10px;
+}
+
+.journeybox ul ul{
+    margin-left: 15px;
+}
+
+.journeybox{
+    margin-left: 28px;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.knowledgeSection{
+    float:right;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.knowledgebox{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: large;
+}
+
+.knowledgebox ul ul{
+    margin-left: 15px;
+}
+
+/* über mich ende */
+
+/* Beispiele Anfang*/
+
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.timer {
+    font-size: 60px;
+    color: black;
+    font-family: sans-serif;
+}
+
+.img1 {
+        max-width: 100px;
+        max-height: 100px;
+}
+
+.img2 {
+    max-width: 300px ;
+    max-height: 300px;
+}
+
+.img3 {
+    max-width: 400px;
+    max-height: 300px;
+}

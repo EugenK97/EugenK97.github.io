@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Das Leben von Evgenij Kozlov</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body id="background">
+
+    <header class="h1index">
+        <h1>Willkommen in meinem Leben</h1> 
+
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Start</a></li>
+                <li><a href="ueberMich.html">Über mich</a></li>
+                <li><a href="Beispiele.html">Beispiele</a></li>
+                <li><a href="Kontakt.html">Kontaktiere mich</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="slideshow">
+                
+                <div class="slide">
+                    <img src="slide1.jpg" alt="erstes Bild" class="slide-bild">
+                    <div class="slide-textbereich">
+                        <h3 class="slide-ueberschrift">Dream Job!</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="slide2.jpg" alt="zweites Bild" class="slide-bild">
+                    <div class="slide-textbereich">
+                        <h3 class="slide-ueberschrift">World is changing!</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="slide3.jpg" alt="drittes Bild" class="slide-bild">
+                    <div class="slide-textbereich">
+                         <h3 class="slide-ueberschrift">Gemeinsam stark!</h3>
+                    </div>
+                </div>
+                
+                <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+                <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a> 
+                    
+                <ol class="indikatorenliste">
+                    <li class="indikator" onclick="springeZuBild(0)">&#8226;</li>
+                    <li class="indikator" onclick="springeZuBild(1)">&#8226;</li>
+                    <li class="indikator" onclick="springeZuBild(2)">&#8226;</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+    <script src="slideshow.js"></script>
+
+</body>
+</html>
+
